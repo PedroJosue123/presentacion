@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="css/estilos_presentacion.css">
+    <title>Mi presentación</title>
+    <script>
+        function contactarse(){
+            var texto = String(document.getElementById("txt").value)
+            var valor = /(@gmail\.com|@hotmail\.com)/
+            if (texto) {
+                if (valor.test(texto))
+                    alert("Correo enviado, dentro de unos momentos te contactaré")
+                else {
+                    alert("Correo incorrecto")
+                }}
+            else {
+                alert("Ingrese el correo")
+            }
+            }
+    </script>
+</head>
+<body>
+<h1 class="titulo">Presentación personal</H1>
+        <img src="Foto.jpg" alt='Logo html5' width='250px' class="border_img"  />
+<div class= "parrafo">
+ <h2>Presentación </h2>
+    <p>Mi nombre es Pedro Josue Ponce Lopez y tengo 18 años </p>
+ <h2>Sobre mí</h2>
+     <p> Me gusta desarrollar cualquier tipo de proyectos asi tambien escuchar musica del genero pop y andino </p>
+ <h2>Tecnologías y Lenguajes de Programación</h2>
+    <p> Aprendi 4 lenguajes de programacion java, python,sql y javascrip tambien aprendi a programar en excel </p>
+ <h2>Formación Profesional</h2>
+     <p>Estoy estudiando Gestion y desarrollo de software y estoy en el 3er ciclo</p>
+ <h2>Idiomas</h2>
+     <p>Aparte de mi idioma natal que es el castellano el ingles de la cual domino poco</p>
+</div>
+<div class="contacto">
+    <h2 >Contáctame </h1>
+    <input  class="caja" type="text" id="txt"  placeholder="Escribe tu correo" /><br />
+    <button  class = "boton" class="caja" type="button" onclick="contactarse()">Contactarse</button>
+</div>
+</body>
